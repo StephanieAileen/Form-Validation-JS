@@ -86,10 +86,10 @@ form.addEventListener("submit", function (e) {
   checkLength(password, 6, 25);
   checkEmail(email);
   chechPasswordsMatch(password, password2);
-  
+});
+
   myTimer = window.setTimeout(function () {
   alert("Thank you for registering. Your account has been set.");
 }, 400);
-});
 
 
