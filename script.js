@@ -72,7 +72,6 @@ function getFieldName(input) {
 
 //Event listeners
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
   checkRequired([username, email, password]);
 
   if (password2.value === "") {
@@ -86,6 +85,8 @@ form.addEventListener("submit", function (e) {
   checkLength(password, 6, 25);
   checkEmail(email);
   chechPasswordsMatch(password, password2);
+  
+   e.preventDefault();
 });
 
   myTimer = window.setTimeout(function () {
