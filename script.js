@@ -85,6 +85,8 @@ form.addEventListener("submit", function (e) {
   checkLength(password, 6, 25);
   checkEmail(email);
   chechPasswordsMatch(password, password2);
+  
+  e.preventDefault();
 });
 
 myTimer = window.setTimeout(function () {
