@@ -88,5 +88,8 @@ form.addEventListener("submit", function (e) {
   chechPasswordsMatch(password, password2);
 });
 
+myTimer = window.setTimeout(function () {
+  alert("Thank you for registering. Please fill the form to continue.");
+}, 400);
 
 
